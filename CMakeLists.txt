@@ -17,25 +17,25 @@ set(CMAKE_C_EXTENSIONS OFF)
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 
 if(BLAKE2_REF)
-  add_subdirectory(${CMAKE_SOURCE_DIR}/ref)
+  add_subdirectory(${BLAKE2_SOURCE_DIR}/ref)
 endif()
 
 if(BLAKE2_SSE)
-  add_subdirectory(${CMAKE_SOURCE_DIR}/sse)
+  add_subdirectory(${BLAKE2_SOURCE_DIR}/sse)
 endif()
 
 if(BLAKE2_NEON)
-  add_subdirectory(${CMAKE_SOURCE_DIR}/neon)
+  add_subdirectory(${BLAKE2_SOURCE_DIR}/neon)
 endif()
 
 if(BLAKE2_POWER8)
-  add_subdirectory(${CMAKE_SOURCE_DIR}/power8)
+  add_subdirectory(${BLAKE2_SOURCE_DIR}/power8)
 endif()
 
 if(BLAKE2_BENCH)
-  add_subdirectory(${CMAKE_SOURCE_DIR}/bench)
+  add_subdirectory(${BLAKE2_SOURCE_DIR}/bench)
 endif()
 
 if(BLAKE2_B2SUM)
-  add_subdirectory(${CMAKE_SOURCE_DIR}/b2sum)
+  add_subdirectory(${BLAKE2_SOURCE_DIR}/b2sum)
 endif()

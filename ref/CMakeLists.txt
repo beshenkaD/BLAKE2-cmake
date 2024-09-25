@@ -5,14 +5,12 @@ file(GLOB HEADER_LIST CONFIGURE_DEPENDS "${BLAKE2_SOURCE_DIR}/${LIB_TYPE}/*.h")
 
 add_library(
   ${LIB_NAME}
-  blake2b.c
-  blake2bp.c
-  blake2s.c
-  blake2sp.c
-  blake2xb.c
-  blake2xs.c
-  genkat-c.c
-  genkat-json.c
+  blake2b-ref.c
+  blake2bp-ref.c
+  blake2s-ref.c
+  blake2sp-ref.c
+  blake2xb-ref.c
+  blake2xs-ref.c
   ${HEADER_LIST})
 
 target_include_directories(${LIB_NAME} PUBLIC "${BLAKE2_SOURCE_DIR}/${LIB_TYPE}")
