@@ -18,18 +18,22 @@ set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 
 if(BLAKE2_REF)
   add_subdirectory(${BLAKE2_SOURCE_DIR}/ref)
+  set(BLAKE2_REF_AVAILABLE TRUE)
 endif()
 
 if(BLAKE2_SSE)
   add_subdirectory(${BLAKE2_SOURCE_DIR}/sse)
+  set(BLAKE2_SSE_AVAILABLE TRUE)
 endif()
 
 if(BLAKE2_NEON)
   add_subdirectory(${BLAKE2_SOURCE_DIR}/neon)
+  set(BLAKE2_NEON_AVAILABLE TRUE)
 endif()
 
 if(BLAKE2_POWER8)
   add_subdirectory(${BLAKE2_SOURCE_DIR}/power8)
+  set(BLAKE2_POWER8_AVAILABLE TRUE)
 endif()
 
 if(BLAKE2_BENCH)
