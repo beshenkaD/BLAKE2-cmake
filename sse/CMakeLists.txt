@@ -11,8 +11,6 @@ add_library(
   blake2sp.c
   blake2xb.c
   blake2xs.c
-  genkat-c.c
-  genkat-json.c
   ${HEADER_LIST})
 
 target_include_directories(${LIB_NAME} PUBLIC "${BLAKE2_SOURCE_DIR}/${LIB_TYPE}")
