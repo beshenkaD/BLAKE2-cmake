@@ -4,7 +4,7 @@ set(LIB_NAME "BLAKE2_${LIB_TYPE}_LIB")
 file(GLOB HEADER_LIST CONFIGURE_DEPENDS "${BLAKE2_SOURCE_DIR}/${LIB_TYPE}/*.h")
 
 add_library(
-  ${LIB_NAME}
+  ${LIB_NAME} STATIC
   blake2b.c
   blake2bp.c
   blake2s.c
